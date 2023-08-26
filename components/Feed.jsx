@@ -8,7 +8,7 @@ import Card from './Card'
 
 const CardList = ({data, currentUser}) => {
   return (
-    <div className='flex min-h-screen'>
+    <div className='flex'>
         <div className='mt-16 promt_layout w-full items-center'>
         {data.map((post) => {
             return (
@@ -83,7 +83,7 @@ const Feed = () => {
           className='search_input peer' 
         />
       </form>
-      <div className='w-full'>
+      <div className='h-auto'>
         <CardList
           className=''
           data ={posts}

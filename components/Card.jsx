@@ -36,7 +36,7 @@ import axios from 'axios'
     };
 
     return (
-        <div className='prompt_card mb-5 break-normal mx-auto'>
+        <div className='prompt_card mb-5 break-normal mx-auto max-w-xs'>
             <div className='flex justify-between items-start gap-5'>
                 <div className='flex-1 flex flex-col justify-start items-start gap-1cursor-pointer break-words'>
                     <h4 className='font-satoshi font-semibold text-gray-900 break-words'>{post.title}</h4>
