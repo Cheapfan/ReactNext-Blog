@@ -19,6 +19,11 @@ const EditPost = () => {
     })
 
     useEffect(() => {
+        const userJSON = sessionStorage.getItem('user');
+        const user = userJSON ? JSON.parse(userJSON) : null;
+        if (!user) {
+            router.push('/')
+        }
         const savedPost = JSON.parse(localStorage.getItem('post'));
         setPost(savedPost);
     }, []);
